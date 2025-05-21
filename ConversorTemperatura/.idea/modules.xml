@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VerificadorPrimo.iml" filepath="$PROJECT_DIR$/VerificadorPrimo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConversorTemperatura.iml" filepath="$PROJECT_DIR$/ConversorTemperatura.iml" />
     </modules>
   </component>
 </project>
