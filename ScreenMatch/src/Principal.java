@@ -8,9 +8,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("The Matrix");
-        meuFilme.setAnoDeLancamento(1999);
+        Filme meuFilme = new Filme("The Matrix", 1999);
         meuFilme.setIncluidoNoPlano(true);
         meuFilme.setDuracaoEmMinutos(136);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
@@ -27,18 +25,14 @@ public class Principal {
             System.out.println(meuFilme.pegaMedia());
         */
 
-        Serie arcane = new Serie();
-        arcane.setNome("Arcane");
-        arcane.setAnoDeLancamento(2021);
+        Serie arcane = new Serie("Arcane", 2021);
         arcane.exibeFichaTecnica();
         arcane.setTemporadas(2);
         arcane.setEpisodiosPorTemporada(9);
         arcane.setMinutosPorEpisodio(40);
         System.out.println("Duração para maratonar " + arcane.getNome() + ": " + arcane.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Sonic 3");
-        outroFilme.setAnoDeLancamento(2024);
+        Filme outroFilme = new Filme("Sonic 3", 2024);
         outroFilme.setIncluidoNoPlano(false);
         outroFilme.setDuracaoEmMinutos(109);
 
@@ -57,10 +51,8 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var filmeDoMarcus = new Filme();
-        filmeDoMarcus.setNome("Star Wars IV");
+        var filmeDoMarcus = new Filme("Star Wars IV", 1977);
         filmeDoMarcus.setDuracaoEmMinutos(121);
-        filmeDoMarcus.setAnoDeLancamento(1977);
         filmeDoMarcus.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
